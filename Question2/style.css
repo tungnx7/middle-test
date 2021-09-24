@@ -8,8 +8,35 @@ a {
     text-decoration: none;
     list-style: none;
     color: #999;
-    border: 1px solid transparent;
-    
+    border: 1px solid transparent; 
+}
+table {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+table th,
+table td {
+    padding: 10px 10px;
+    text-align: left;
+}
+table th {
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+/* table tbody td {
+    border-bottom: 1px solid black;
+} */
+table tbody td:not(:last-child) {
+    border-bottom: 1px solid gray;
+}
+table tbody td span {
+    color: blue;
+}
+table tbody td span:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 .container {
     width: 1920px;
@@ -36,6 +63,10 @@ a {
     background-color: #999;
     color: white;
 }
+.header-item--tn:hover {
+    color: rgb(30, 144, 255);
+}
+
 .header-item:not(:first-child) {
     margin-left: 20px;
 }
@@ -54,6 +85,13 @@ a {
     font-weight: 900;
     transform: translate(150%, 300%);
 }
+.banner-heading:hover {
+    color: rgb(30, 144, 255);
+}
+.banner-icon {
+    position: relative;
+    z-index: 10;
+}
 .info {
     text-align: center;
     font-size: 28px;
@@ -71,4 +109,109 @@ a {
 .app-img {
     width: 250px;
     height: 280px;
+}
+.box {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.box-title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.letter {
+    width: 1250px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.letter-lines {
+    margin-bottom: 30px;
+}
+.letter-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.letter-input {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+}
+.letter-input--3 {
+    padding: 10px 10px 300px 10px;
+    width: 100%;
+}
+.letter-send {
+    background-color: red;
+    color: white;
+    padding: 10px 30px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin: 20px 1145px;
+    display: flex;
+    align-items: center;
+}
+.letter-icon {
+    margin-right: 10px;
+}
+.title {
+    width: 1280px;
+    max-width: 100%;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;  
+}
+.content {
+    width: 1280px;
+    max-width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+.content-img {
+    object-fit: cover;
+    width: 32%;
+    padding-right: 50px;
+}
+.content-write{
+    font-weight: bold;
+    line-height: 2.6;
+    font-size: 20px;
+}
+.content-write span {
+    font-weight: lighter;
+}
+.end {
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid black;
+}
+.sign {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 1600px;
+    font-style: italic;
+}
+.sign-title {
+    font-weight: bold;
+}
+.album {
+    width: 1280px;
+    padding: 15px 15px;
+    display: flex;
+    
+
+    
+}
+.album-img {
+    width: 200px;
 }
