@@ -47,18 +47,12 @@ table tbody td span:hover {
 .header {
     display: flex;
     justify-content: space-between;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 10px;
 }
 .header-item {
     padding: 10px 10px;
     font-size: 18px;
 }
-
-
 .header-item:hover {
     background-color: #999;
     color: white;
@@ -221,6 +215,15 @@ table tbody td span:hover {
         position: absolute;
         transform: translate(100%, 200%);
     }
+    .letter {
+        width: 1000px;
+    }
+    .letter-send {
+        margin: 20px 900px;
+    }
+    .letter-line-1440 {
+        display: none;
+    }
 }
 @media screen and (max-width: 1279px) {
     .banner {
@@ -236,6 +239,27 @@ table tbody td span:hover {
     }
     .header-item:not(:first-child) {
         margin-left: 10px;
+    }
+    .letter {
+        width: 800px;
+    }
+    .letter-send {
+        margin: 20px 700px;
+    }
+    .letter-line-1024 {
+        display: none;
+    }
+    .box {
+        height: 40px;;
+    }
+    .box-tittle {
+        font-size: 40px;
+    }
+    .content {
+        width: 800px;
+    }
+    .content-img {
+        width: 50%;
     }
 }
 @media screen and (max-width: 1023px) {
@@ -257,6 +281,95 @@ table tbody td span:hover {
     .info {
         font-size: 22px;
     }
+    .letter {
+        width: 600px;
+    }
+    .letter-line-768 {
+        display: none;
+    }
+    .letter-send {
+        margin: 20px 500px;
+    }
+    .box {
+        height: 35px;
+    }
+    .box-title {
+        font-size: 35px;
+    }
+    table {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
 }
+@media screen and (max-width: 767px) {
+    .letter {
+        width: 380px;
+    }
+    .letter-line-414 {
+        display: none;
+    }
+    .letter-send {
+        margin: 15px 275px;
+    }
+    .header-item {
+        font-size: 12px;
+        padding: 0;
+    }
+    .box {
+        height: 25px;
+    }
+    .box-title {
+        font-size: 25px;
+    }
+    .app {
+        flex-direction: column;
+        margin-left: 120px;
+    }
+    .letter-title {
+        font-size: 16px;
+    }
+    .letter-input--3 {
+        padding: 10px 10px 200px 10px;
+    }
+    .banner-heading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: rgb(70, 70, 223);
+        font-size: 40px;
+        font-weight: 700;
+        transform: translate(50%, 100%);
+    }
+    table th {
+        font-size: 14px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content-img {
+        width: 100%;
+    }
+    .title {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 413px) {
+    .letter-line-375 {
+        display: none;
+    }
+    .letter-send {
+        margin: 15px 280px;
+        padding: 5px 15px;
+    }
+    .banner-heading {
+        font-size: 35px;
+    }
+    table {
+        width: 100%;
+    }
+}
+
+
 
 
